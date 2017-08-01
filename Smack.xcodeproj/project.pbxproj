@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		192603321F2EF12200DA9556 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192603311F2EF12200DA9556 /* AppDelegate.swift */; };
-		192603341F2EF12200DA9556 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192603331F2EF12200DA9556 /* ViewController.swift */; };
 		192603371F2EF12200DA9556 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192603351F2EF12200DA9556 /* Main.storyboard */; };
 		192603391F2EF12200DA9556 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 192603381F2EF12200DA9556 /* Assets.xcassets */; };
 		1926033C1F2EF12200DA9556 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1926033A1F2EF12200DA9556 /* LaunchScreen.storyboard */; };
+		193FA72A1F302F0200C6BCA6 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193FA7291F302F0200C6BCA6 /* ChatVC.swift */; };
+		193FA72C1F302F1800C6BCA6 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193FA72B1F302F1800C6BCA6 /* ChannelVC.swift */; };
 		198CE4631F2EFEAC003BF487 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 198CE4621F2EFEAC003BF487 /* SWRevealViewController.m */; };
 		55E2F519D80F813833734088 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8219B07377F341FA2B2EF1B4 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
@@ -20,11 +21,12 @@
 		04F3A68831C1E4ED692CE410 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 		1926032E1F2EF12200DA9556 /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		192603311F2EF12200DA9556 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		192603331F2EF12200DA9556 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		192603361F2EF12200DA9556 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		192603381F2EF12200DA9556 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1926033B1F2EF12200DA9556 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1926033D1F2EF12200DA9556 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		193FA7291F302F0200C6BCA6 /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		193FA72B1F302F1800C6BCA6 /* ChannelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		198CE4601F2EFEAB003BF487 /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		198CE4611F2EFEAC003BF487 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		198CE4621F2EFEAC003BF487 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -47,7 +49,6 @@
 		192603251F2EF12200DA9556 = {
 			isa = PBXGroup;
 			children = (
-				198CE45F1F2EFE79003BF487 /* Supporting Files */,
 				192603301F2EF12200DA9556 /* Smack */,
 				1926032F1F2EF12200DA9556 /* Products */,
 				25AFACC0B4491011FE3AA880 /* Pods */,
@@ -66,14 +67,40 @@
 		192603301F2EF12200DA9556 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				193FA7281F302EE200C6BCA6 /* Model */,
+				193FA7271F302EDB00C6BCA6 /* View */,
+				193FA7261F302ED200C6BCA6 /* Controller */,
+				198CE45F1F2EFE79003BF487 /* Supporting Files */,
 				192603311F2EF12200DA9556 /* AppDelegate.swift */,
-				192603331F2EF12200DA9556 /* ViewController.swift */,
 				192603351F2EF12200DA9556 /* Main.storyboard */,
 				192603381F2EF12200DA9556 /* Assets.xcassets */,
 				1926033A1F2EF12200DA9556 /* LaunchScreen.storyboard */,
 				1926033D1F2EF12200DA9556 /* Info.plist */,
 			);
 			path = Smack;
+			sourceTree = "<group>";
+		};
+		193FA7261F302ED200C6BCA6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				193FA7291F302F0200C6BCA6 /* ChatVC.swift */,
+				193FA72B1F302F1800C6BCA6 /* ChannelVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		193FA7271F302EDB00C6BCA6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		193FA7281F302EE200C6BCA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		198CE45F1F2EFE79003BF487 /* Supporting Files */ = {
@@ -84,6 +111,7 @@
 				198CE4601F2EFEAB003BF487 /* Smack-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		25AFACC0B4491011FE3AA880 /* Pods */ = {
@@ -228,8 +256,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				192603341F2EF12200DA9556 /* ViewController.swift in Sources */,
+				193FA72C1F302F1800C6BCA6 /* ChannelVC.swift in Sources */,
 				192603321F2EF12200DA9556 /* AppDelegate.swift in Sources */,
+				193FA72A1F302F0200C6BCA6 /* ChatVC.swift in Sources */,
 				198CE4631F2EFEAC003BF487 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
