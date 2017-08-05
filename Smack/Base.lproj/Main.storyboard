@@ -115,7 +115,7 @@
                                 <rect key="frame" x="281" y="83" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="PgL-ic-wch">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="PgL-ic-wch" customClass="CirlceImage" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="16" y="572" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="WLG-l7-RfL"/>
@@ -433,7 +433,7 @@
                                 <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="Uhr-el-oWu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="Uhr-el-oWu" customClass="CirlceImage" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="137.5" y="299" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="CBc-tl-web"/>
@@ -455,6 +455,10 @@
                                     <action selector="pickBGColorPressed:" destination="mxN-1a-Nwa" eventType="touchUpInside" id="H1R-Iy-O80"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ooy-t8-uue">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" cocoaTouchSystemColor="darkTextColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -469,16 +473,19 @@
                             <constraint firstItem="kR2-34-tfh" firstAttribute="top" secondItem="1VL-f2-I9t" secondAttribute="bottom" constant="8" id="SQ7-nW-r2t"/>
                             <constraint firstItem="0yb-0e-MdK" firstAttribute="centerX" secondItem="kfF-VC-333" secondAttribute="centerX" id="b4F-x6-3ZS"/>
                             <constraint firstItem="qUr-XM-3gf" firstAttribute="centerX" secondItem="kfF-VC-333" secondAttribute="centerX" id="bk6-SY-mkE"/>
+                            <constraint firstItem="ooy-t8-uue" firstAttribute="centerX" secondItem="kfF-VC-333" secondAttribute="centerX" id="hTP-ix-Hwu"/>
                             <constraint firstItem="Uhr-el-oWu" firstAttribute="centerX" secondItem="kfF-VC-333" secondAttribute="centerX" id="mZF-IS-I9e"/>
                             <constraint firstItem="kR2-34-tfh" firstAttribute="trailing" secondItem="kfF-VC-333" secondAttribute="trailingMargin" id="oKU-E7-R2t"/>
                             <constraint firstItem="0yb-0e-MdK" firstAttribute="top" secondItem="1VL-f2-I9t" secondAttribute="bottom" constant="40" id="vMf-ie-BYd"/>
                             <constraint firstItem="qUr-XM-3gf" firstAttribute="top" secondItem="0yb-0e-MdK" secondAttribute="bottom" constant="40" id="w23-Sv-Ax5"/>
+                            <constraint firstItem="ooy-t8-uue" firstAttribute="centerY" secondItem="kfF-VC-333" secondAttribute="centerY" id="ym1-2K-xNc"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="emailTxt" destination="2ZD-oH-L09" id="yWC-KV-XpA"/>
                         <outlet property="passwordTxt" destination="O5A-wz-oHz" id="pvg-Rm-1f7"/>
                         <outlet property="profileImg" destination="Uhr-el-oWu" id="eGI-Ot-nHd"/>
+                        <outlet property="spinner" destination="ooy-t8-uue" id="sKk-kJ-f7f"/>
                         <outlet property="userNameTxt" destination="sV4-jR-Uul" id="6hH-SQ-E7t"/>
                         <segue destination="MZA-FZ-gR0" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="GwP-Td-HkA"/>
                         <segue destination="HcZ-yy-U5K" kind="show" identifier="toAvatarPicker" id="7ml-ft-P1s"/>

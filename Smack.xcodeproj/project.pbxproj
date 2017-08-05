@@ -21,6 +21,7 @@
 		19CE46BD1F353A6600D8CCF3 /* userDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46BC1F353A6600D8CCF3 /* userDataService.swift */; };
 		19CE46BF1F3552FC00D8CCF3 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46BE1F3552FC00D8CCF3 /* AvatarPickerVC.swift */; };
 		19CE46C11F3556F300D8CCF3 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46C01F3556F300D8CCF3 /* AvatarCell.swift */; };
+		19CE46C31F35680900D8CCF3 /* CirlceImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46C21F35680900D8CCF3 /* CirlceImage.swift */; };
 		19E19AB01F33FFD400A2A2B8 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E19AAF1F33FFD400A2A2B8 /* AuthService.swift */; };
 		19E19AB21F3413A700A2A2B8 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E19AB11F3413A700A2A2B8 /* RoundedButton.swift */; };
 		55E2F519D80F813833734088 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8219B07377F341FA2B2EF1B4 /* Pods_Smack.framework */; };
@@ -46,6 +47,7 @@
 		19CE46BC1F353A6600D8CCF3 /* userDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userDataService.swift; sourceTree = "<group>"; };
 		19CE46BE1F3552FC00D8CCF3 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		19CE46C01F3556F300D8CCF3 /* AvatarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		19CE46C21F35680900D8CCF3 /* CirlceImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirlceImage.swift; sourceTree = "<group>"; };
 		19E19AAF1F33FFD400A2A2B8 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		19E19AB11F3413A700A2A2B8 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		8219B07377F341FA2B2EF1B4 /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +128,7 @@
 				19386CC41F31575100D6FC51 /* GradientView.swift */,
 				19E19AB11F3413A700A2A2B8 /* RoundedButton.swift */,
 				19CE46C01F3556F300D8CCF3 /* AvatarCell.swift */,
+				19CE46C21F35680900D8CCF3 /* CirlceImage.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				19386CCC1F31725000D6FC51 /* createAccountVC.swift in Sources */,
 				19E19AB01F33FFD400A2A2B8 /* AuthService.swift in Sources */,
 				19386CC51F31575100D6FC51 /* GradientView.swift in Sources */,
+				19CE46C31F35680900D8CCF3 /* CirlceImage.swift in Sources */,
 				19386CCA1F31705300D6FC51 /* loginVC.swift in Sources */,
 				193FA72A1F302F0200C6BCA6 /* ChatVC.swift in Sources */,
 				19CE46C11F3556F300D8CCF3 /* AvatarCell.swift in Sources */,
