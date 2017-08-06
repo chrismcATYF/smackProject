@@ -96,20 +96,3 @@ class createAccountVC: UIViewController {
     }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
