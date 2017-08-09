@@ -25,5 +25,4 @@ class CirlceImage: UIImageView {
         super.prepareForInterfaceBuilder()
         setupView()
     }
-    
 }

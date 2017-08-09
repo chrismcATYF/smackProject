@@ -94,7 +94,6 @@
 				19B53A2C1F3AA82E008CBA69 /* xibs */,
 				19E19AAE1F33FFB600A2A2B8 /* Services */,
 				19386CC61F316AA800D6FC51 /* Utilities */,
-				193FA7281F302EE200C6BCA6 /* Model */,
 				193FA7271F302EDB00C6BCA6 /* View */,
 				193FA7261F302ED200C6BCA6 /* Controller */,
 				198CE45F1F2EFE79003BF487 /* Supporting Files */,
@@ -137,13 +136,6 @@
 				19CE46C21F35680900D8CCF3 /* CirlceImage.swift */,
 			);
 			name = View;
-			sourceTree = "<group>";
-		};
-		193FA7281F302EE200C6BCA6 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 		198CE45F1F2EFE79003BF487 /* Supporting Files */ = {

@@ -19,7 +19,6 @@ class ChannelVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
-        
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.userDataDidChange(_:)) , name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
     }
     
@@ -44,5 +43,4 @@ class ChannelVC: UIViewController {
             userImg.backgroundColor = UIColor.clear
         }
     }
-    
 }

@@ -10,19 +10,15 @@ import UIKit
 
 class AvatarPickerVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
-    // Outlets
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var segmentControl: UISegmentedControl!
     
-    // Variables
     var avatarType = AvatarType.dark
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         collectionView.delegate = self
         collectionView.dataSource = self
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -51,16 +47,13 @@ class AvatarPickerVC: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
         var numberOfColumns: CGFloat = 3
         if UIScreen.main.bounds.width > 320 {
             numberOfColumns = 4
         }
-        
         let spaceBetweenCells: CGFloat = 10
         let padding: CGFloat = 40
         let cellDimension = ((collectionView.bounds.width - padding) - (numberOfColumns - 1) * spaceBetweenCells) / numberOfColumns
-        
         return CGSize(width: cellDimension, height: cellDimension)
     }
     
@@ -76,5 +69,4 @@ class AvatarPickerVC: UIViewController, UICollectionViewDataSource, UICollection
     @IBAction func backPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
 }

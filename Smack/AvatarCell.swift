@@ -19,9 +19,7 @@ class AvatarCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         setupView()
-        
     }
     
     func configueCell(index: Int, type: AvatarType) {
@@ -41,5 +39,4 @@ class AvatarCell: UICollectionViewCell {
         self.layer.cornerRadius = 10
         self.clipsToBounds = true
     }
-    
 }
