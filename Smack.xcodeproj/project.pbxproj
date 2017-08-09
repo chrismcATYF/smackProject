@@ -18,6 +18,8 @@
 		193FA72A1F302F0200C6BCA6 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193FA7291F302F0200C6BCA6 /* ChatVC.swift */; };
 		193FA72C1F302F1800C6BCA6 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193FA72B1F302F1800C6BCA6 /* ChannelVC.swift */; };
 		198CE4631F2EFEAC003BF487 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 198CE4621F2EFEAC003BF487 /* SWRevealViewController.m */; };
+		19B53A2A1F3AA7EF008CBA69 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B53A281F3AA7EF008CBA69 /* ProfileVC.swift */; };
+		19B53A2B1F3AA7EF008CBA69 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19B53A291F3AA7EF008CBA69 /* ProfileVC.xib */; };
 		19CE46BD1F353A6600D8CCF3 /* userDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46BC1F353A6600D8CCF3 /* userDataService.swift */; };
 		19CE46BF1F3552FC00D8CCF3 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46BE1F3552FC00D8CCF3 /* AvatarPickerVC.swift */; };
 		19CE46C11F3556F300D8CCF3 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CE46C01F3556F300D8CCF3 /* AvatarCell.swift */; };
@@ -44,6 +46,8 @@
 		198CE4601F2EFEAB003BF487 /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		198CE4611F2EFEAC003BF487 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		198CE4621F2EFEAC003BF487 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		19B53A281F3AA7EF008CBA69 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		19B53A291F3AA7EF008CBA69 /* ProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		19CE46BC1F353A6600D8CCF3 /* userDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userDataService.swift; sourceTree = "<group>"; };
 		19CE46BE1F3552FC00D8CCF3 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		19CE46C01F3556F300D8CCF3 /* AvatarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 		192603301F2EF12200DA9556 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				19B53A2C1F3AA82E008CBA69 /* xibs */,
 				19E19AAE1F33FFB600A2A2B8 /* Services */,
 				19386CC61F316AA800D6FC51 /* Utilities */,
 				193FA7281F302EE200C6BCA6 /* Model */,
@@ -118,6 +123,7 @@
 				19386CC91F31705300D6FC51 /* loginVC.swift */,
 				19386CCB1F31725000D6FC51 /* createAccountVC.swift */,
 				19CE46BE1F3552FC00D8CCF3 /* AvatarPickerVC.swift */,
+				19B53A281F3AA7EF008CBA69 /* ProfileVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -149,6 +155,14 @@
 			);
 			name = "Supporting Files";
 			path = ..;
+			sourceTree = "<group>";
+		};
+		19B53A2C1F3AA82E008CBA69 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				19B53A291F3AA7EF008CBA69 /* ProfileVC.xib */,
+			);
+			name = xibs;
 			sourceTree = "<group>";
 		};
 		19E19AAE1F33FFB600A2A2B8 /* Services */ = {
@@ -241,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19B53A2B1F3AA7EF008CBA69 /* ProfileVC.xib in Resources */,
 				1926033C1F2EF12200DA9556 /* LaunchScreen.storyboard in Resources */,
 				192603391F2EF12200DA9556 /* Assets.xcassets in Resources */,
 				192603371F2EF12200DA9556 /* Main.storyboard in Resources */,
@@ -302,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19B53A2A1F3AA7EF008CBA69 /* ProfileVC.swift in Sources */,
 				193FA72C1F302F1800C6BCA6 /* ChannelVC.swift in Sources */,
 				19CE46BF1F3552FC00D8CCF3 /* AvatarPickerVC.swift in Sources */,
 				19E19AB21F3413A700A2A2B8 /* RoundedButton.swift in Sources */,
