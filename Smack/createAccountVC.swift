@@ -33,9 +33,9 @@ class createAccountVC: UIViewController {
         if UserDataService.instance.avatarName != "" {
             profileImg.image = UIImage(named: UserDataService.instance.avatarName)
             avatarName = UserDataService.instance.avatarName
-        }
         if avatarName.contains("light") && bgColor == nil {
             profileImg.backgroundColor = UIColor.lightGray
+            }
         }
     }
     
@@ -76,9 +76,10 @@ class createAccountVC: UIViewController {
         let b = CGFloat(arc4random_uniform(255)) / 255
         
         bgColor = UIColor(red: r, green: g, blue: b, alpha: 1)
+        avatarColor = "[\(r), \(g), \(b), 1]"
         UIView.animate(withDuration: 0.2) {
-            self.profileImg.backgroundColor = self.bgColor}
-        
+            self.profileImg.backgroundColor = self.bgColor
+        }
     }
     
     @IBAction func closePressed(_ sender: Any) {

@@ -60,7 +60,10 @@ class AuthService {
         
         let lowerCasedEmail = email.lowercased()
         
-        let body: [String: Any] = ["email": lowerCasedEmail, "password": password]
+        let body: [String: Any] = [
+            "email": lowerCasedEmail,
+            "password": password
+        ]
         
         Alamofire.request(URL_LOGIN, method: .post, parameters: body, encoding: JSONEncoding.default, headers: HEADER).responseString { (response) in
             
@@ -77,7 +80,6 @@ class AuthService {
                 debugPrint(response.result.error as Any)
             }
         }
-        
     }
     
     func createUser(name: String, email: String, avatarName: String, avatarColor: String, completion: @escaping CompletionHandler) {
