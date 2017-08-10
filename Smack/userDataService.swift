@@ -33,7 +33,7 @@ class UserDataService {
     func returnUIColor(components: String) -> UIColor {
         let scanner = Scanner(string: components)
         let skipped = CharacterSet(charactersIn: "[], ")
-        var comma = CharacterSet(charactersIn: ",")
+        let comma = CharacterSet(charactersIn: ",")
         scanner.charactersToBeSkipped = skipped
         var r, g, b, a: NSString?
         scanner.scanUpToCharacters(from: comma, into: &r)
