@@ -15,6 +15,8 @@
 		19386CC81F316AC100D6FC51 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19386CC71F316AC100D6FC51 /* Constants.swift */; };
 		19386CCA1F31705300D6FC51 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19386CC91F31705300D6FC51 /* loginVC.swift */; };
 		19386CCC1F31725000D6FC51 /* createAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19386CCB1F31725000D6FC51 /* createAccountVC.swift */; };
+		193A0FEB1F3D3F960099EE81 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193A0FEA1F3D3F960099EE81 /* MessageService.swift */; };
+		193A0FEE1F3D3FE80099EE81 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193A0FED1F3D3FE80099EE81 /* Channel.swift */; };
 		193FA72A1F302F0200C6BCA6 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193FA7291F302F0200C6BCA6 /* ChatVC.swift */; };
 		193FA72C1F302F1800C6BCA6 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193FA72B1F302F1800C6BCA6 /* ChannelVC.swift */; };
 		198CE4631F2EFEAC003BF487 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 198CE4621F2EFEAC003BF487 /* SWRevealViewController.m */; };
@@ -41,6 +43,8 @@
 		19386CC71F316AC100D6FC51 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		19386CC91F31705300D6FC51 /* loginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
 		19386CCB1F31725000D6FC51 /* createAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createAccountVC.swift; sourceTree = "<group>"; };
+		193A0FEA1F3D3F960099EE81 /* MessageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		193A0FED1F3D3FE80099EE81 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		193FA7291F302F0200C6BCA6 /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		193FA72B1F302F1800C6BCA6 /* ChannelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		198CE4601F2EFEAB003BF487 /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 		192603301F2EF12200DA9556 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				193A0FEC1F3D3FC70099EE81 /* Model */,
 				19B53A2C1F3AA82E008CBA69 /* xibs */,
 				19E19AAE1F33FFB600A2A2B8 /* Services */,
 				19386CC61F316AA800D6FC51 /* Utilities */,
@@ -112,6 +117,14 @@
 				19386CC71F316AC100D6FC51 /* Constants.swift */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		193A0FEC1F3D3FC70099EE81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				193A0FED1F3D3FE80099EE81 /* Channel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		193FA7261F302ED200C6BCA6 /* Controller */ = {
@@ -162,6 +175,7 @@
 			children = (
 				19E19AAF1F33FFD400A2A2B8 /* AuthService.swift */,
 				19CE46BC1F353A6600D8CCF3 /* userDataService.swift */,
+				193A0FEA1F3D3F960099EE81 /* MessageService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -313,7 +327,9 @@
 				193FA72C1F302F1800C6BCA6 /* ChannelVC.swift in Sources */,
 				19CE46BF1F3552FC00D8CCF3 /* AvatarPickerVC.swift in Sources */,
 				19E19AB21F3413A700A2A2B8 /* RoundedButton.swift in Sources */,
+				193A0FEE1F3D3FE80099EE81 /* Channel.swift in Sources */,
 				192603321F2EF12200DA9556 /* AppDelegate.swift in Sources */,
+				193A0FEB1F3D3F960099EE81 /* MessageService.swift in Sources */,
 				19386CCC1F31725000D6FC51 /* createAccountVC.swift in Sources */,
 				19E19AB01F33FFD400A2A2B8 /* AuthService.swift in Sources */,
 				19386CC51F31575100D6FC51 /* GradientView.swift in Sources */,
