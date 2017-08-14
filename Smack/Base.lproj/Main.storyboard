@@ -80,6 +80,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="channelNameLbl" destination="VbW-jf-Utk" id="njo-Bd-CEY"/>
                         <outlet property="menuButton" destination="H8c-qJ-gD1" id="0ze-be-hrg"/>
                     </connections>
                 </viewController>
