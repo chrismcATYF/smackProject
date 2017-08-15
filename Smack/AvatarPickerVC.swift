@@ -51,6 +51,7 @@ class AvatarPickerVC: UIViewController, UICollectionViewDataSource, UICollection
         if UIScreen.main.bounds.width > 320 {
             numberOfColumns = 4
         }
+        
         let spaceBetweenCells: CGFloat = 10
         let padding: CGFloat = 40
         let cellDimension = ((collectionView.bounds.width - padding) - (numberOfColumns - 1) * spaceBetweenCells) / numberOfColumns

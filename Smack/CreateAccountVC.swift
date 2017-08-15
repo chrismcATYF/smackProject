@@ -8,7 +8,7 @@
 
 import UIKit
 
-class createAccountVC: UIViewController {
+class CreateAccountVC: UIViewController {
     
     @IBOutlet weak var userNameTxt: UITextField!
     @IBOutlet weak var emailTxt: UITextField!
@@ -80,11 +80,11 @@ class createAccountVC: UIViewController {
     
     func setupView() {
         spinner.isHidden = true
-        let tap = UITapGestureRecognizer(target: self, action: #selector(createAccountVC.handleTap))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(CreateAccountVC.handleTap))
         view.addGestureRecognizer(tap)
     }
     
-    func handleTap() {
+    @objc func handleTap() {
         view.endEditing(true)
     }
 }

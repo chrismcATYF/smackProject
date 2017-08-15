@@ -17,14 +17,12 @@ class MessageCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
     }
     
     func configureCell(message: Message) {
         messageBodyLbl.text = message.message
-        userNameLbl.text = message.username
+        userNameLbl.text = message.userName
         userImage.image = UIImage(named: message.userAvatar)
         userImage.backgroundColor = UserDataService.instance.returnUIColor(components: message.userAvatarColor)
     }
-    
 }

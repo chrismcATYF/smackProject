@@ -9,7 +9,7 @@
 import Foundation
 
 struct Channel {
-    private(set) public var channelTitle: String!
-    private(set) public var channelDescription: String!
-    private(set) public var id: String!
+    public private(set) var channelTitle: String!
+    public private(set) var channelDescription: String!
+    public private(set) var id: String!
 }

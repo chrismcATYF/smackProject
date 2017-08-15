@@ -41,9 +41,6 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             addChannel.modalPresentationStyle = .custom
             present(addChannel, animated: true, completion: nil)
         }
-        let addChannel = AddChannelVC()
-        addChannel.modalPresentationStyle = .custom
-        present(addChannel, animated: true, completion: nil)
     }
     
     @IBAction func loginBtnPressed(_ sender: Any) {
@@ -70,7 +67,7 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             userImg.image = UIImage(named: UserDataService.instance.avatarName)
             userImg.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)
         } else {
-            loginBtn.setTitle("login", for: .normal)
+            loginBtn.setTitle("Login", for: .normal)
             userImg.image = UIImage(named: "menuProfileIcon")
             userImg.backgroundColor = UIColor.clear
             tableView.reloadData()
@@ -99,8 +96,6 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let channel = MessageService.instance.channels[indexPath.row]
         MessageService.instance.selectedChannel = channel
         NotificationCenter.default.post(name: NOTIF_CHANNEL_SELECTED, object: nil)
-        
         self.revealViewController().revealToggle(animated: true)
     }
-    
 }

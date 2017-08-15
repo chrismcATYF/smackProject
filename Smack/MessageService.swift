@@ -13,13 +13,13 @@ import SwiftyJSON
 class MessageService {
     
     static let instance = MessageService()
+    
     var channels = [Channel]()
     var messages = [Message]()
     var selectedChannel: Channel?
     
     func findAllChannel(completion: @escaping CompletionHandler) {
         Alamofire.request(URL_GET_CHANNELS, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseString { (response) in
-            
             if response.result.error == nil {
                 guard let data = response.data else { return }
                 if let json = JSON(Data: data).array {
@@ -50,19 +50,19 @@ class MessageService {
                         let messageBody = item["messageBody"].stringValue
                         let channelId = item["channelId"].stringValue
                         let iD = item["_id"].stringValue
-                        let username = item["username"].stringValue
+                        let userName = item["userName"].stringValue
                         let userAvatar = item["userAvatar"].stringValue
                         let userAvatarColor = item["userAvatarColor"].stringValue
                         let timeStamp = item["timeStamp"].stringValue
-                        let message = Message(message: messageBody, username: username, channelId: channelId, userAvatar: userAvatar, userAvatarColor: userAvatarColor, id: iD, timeStamp: timeStamp)
+                        let message = Message(message: messageBody, userName: userName, channelId: channelId, userAvatar: userAvatar, userAvatarColor: userAvatarColor, id: iD, timeStamp: timeStamp)
                         self.messages.append(message)
                     }
                     print(self.messages)
                     completion(true)
                 }
             } else {
-                completion(false)
                 debugPrint(response.result.error as Any)
+                completion(false)
             }
         }
     }
@@ -74,18 +74,4 @@ class MessageService {
     func clearChannels() {
         channels.removeAll()
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }

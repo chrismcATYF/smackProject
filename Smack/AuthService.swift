@@ -37,7 +37,11 @@ class AuthService {
     
     func registerUser(email: String, password: String, completion: @escaping CompletionHandler) {
         let lowerCasedEmail = email.lowercased()
-        let body: [String: Any] = ["email": lowerCasedEmail, "password": password]
+        let body: [String: Any] = [
+            "email": lowerCasedEmail,
+            "password": password
+        ]
+        
         Alamofire.request(URL_REGISTER, method: .post, parameters: body, encoding: JSONEncoding.default, headers: HEADER).responseString { (response) in
             if response.result.error == nil {
                 completion(true)
@@ -54,6 +58,7 @@ class AuthService {
             "email": lowerCasedEmail,
             "password": password
         ]
+        
         Alamofire.request(URL_LOGIN, method: .post, parameters: body, encoding: JSONEncoding.default, headers: HEADER).responseString { (response) in
             if response.result.error == nil {
                 guard let data = response.data else { return }
@@ -89,6 +94,7 @@ class AuthService {
             }
         }
     }
+    
     func findUserByEmail(completion: @escaping CompletionHandler) {
         Alamofire.request("\(URL_USER_BY_EMAIL)\(userEmail)", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
             if response.result.error == nil {
@@ -111,12 +117,4 @@ class AuthService {
         let name = json["name"].stringValue
         UserDataService.instance.setUserData(id: id, color: color, avatarName: avatarName, email: email, name: name)
     }
-    
-    
-    
-    
-    
-    
-    
-    
 }

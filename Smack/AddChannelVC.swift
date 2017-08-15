@@ -36,11 +36,9 @@ class AddChannelVC: UIViewController {
     func setupView() {
         let closeTouch = UITapGestureRecognizer(target: self, action: #selector(AddChannelVC.closeTap(_:)))
         bgView.addGestureRecognizer(closeTouch)
-        
     }
     
     @objc func closeTap(_ recognizer: UITapGestureRecognizer) {
         dismiss(animated: true, completion: nil)
     }
-    
 }

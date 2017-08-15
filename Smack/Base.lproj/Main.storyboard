@@ -79,6 +79,9 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="messageBoxEditing:" destination="aFy-hw-aTh" eventType="editingChanged" id="6iI-8K-dIg"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxs-Xu-Q5o">
                                 <rect key="frame" x="337" y="632" width="30" height="30"/>
@@ -167,6 +170,7 @@
                         <outlet property="channelNameLbl" destination="VbW-jf-Utk" id="njo-Bd-CEY"/>
                         <outlet property="menuButton" destination="H8c-qJ-gD1" id="0ze-be-hrg"/>
                         <outlet property="messageTextBox" destination="ahB-UY-l6J" id="0LT-yp-ch1"/>
+                        <outlet property="sendBtn" destination="bxs-Xu-Q5o" id="eIb-Ii-bXs"/>
                         <outlet property="tableView" destination="qhU-4v-Wi0" id="U2u-ec-CRN"/>
                     </connections>
                 </viewController>
@@ -285,7 +289,7 @@
         <!--LoginVC-->
         <scene sceneID="coS-Bc-NcW">
             <objects>
-                <viewController id="9Pn-0p-oqW" customClass="loginVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9Pn-0p-oqW" customClass="LoginVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ulc-uq-qm6"/>
                         <viewControllerLayoutGuide type="bottom" id="d4Z-t0-pmk"/>
@@ -427,7 +431,7 @@
         <!--Create AccountVC-->
         <scene sceneID="Drc-PB-XvN">
             <objects>
-                <viewController id="mxN-1a-Nwa" customClass="createAccountVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mxN-1a-Nwa" customClass="CreateAccountVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1VL-f2-I9t"/>
                         <viewControllerLayoutGuide type="bottom" id="AZV-is-2ma"/>
