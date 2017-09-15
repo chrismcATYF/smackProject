@@ -6,10 +6,9 @@
 //  Copyright © 2017 Chris McDonald. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class UserDataService {
-    
     static let instance = UserDataService()
     
     public private(set) var id = ""
@@ -18,9 +17,9 @@ class UserDataService {
     public private(set) var email = ""
     public private(set) var name = ""
     
-    func setUserData(id: String, color: String, avatarName: String, email: String, name: String) {
+    func setUserData(id: String, avatarColor: String, avatarName: String, email: String, name: String) {
         self.id = id
-        self.avatarColor = color
+        self.avatarColor = avatarColor
         self.avatarName = avatarName
         self.email = email
         self.name = name

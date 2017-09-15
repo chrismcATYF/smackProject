@@ -6,7 +6,7 @@
 //  Copyright © 2017 Chris McDonald. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import Alamofire
 import SwiftyJSON
 
@@ -111,10 +111,10 @@ class AuthService {
     func setUserInfo(data: Data) {
         let json = JSON(Data: data)
         let id = json["id"].stringValue
-        let color = json["avatarColor"].stringValue
+        let avatarColor = json["avatarColor"].stringValue
         let avatarName = json["avatarName"].stringValue
         let email = json["email"].stringValue
         let name = json["name"].stringValue
-        UserDataService.instance.setUserData(id: id, color: color, avatarName: avatarName, email: email, name: name)
+        UserDataService.instance.setUserData(id: id, avatarColor: avatarColor, avatarName: avatarName, email: email, name: name)
     }
 }

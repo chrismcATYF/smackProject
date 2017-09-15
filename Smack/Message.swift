@@ -6,7 +6,7 @@
 //  Copyright © 2017 Chris McDonald. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Message {
     public private(set) var message: String!
