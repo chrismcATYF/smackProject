@@ -101,7 +101,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fru-Ei-gi9" customClass="CirlceImage" customModule="Smack" customModuleProvider="target">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="fru-Ei-gi9" customClass="CirlceImage" customModule="Smack" customModuleProvider="target">
                                                     <rect key="frame" x="8" y="8" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="W1i-Iy-Uy7"/>
@@ -126,6 +126,16 @@
                                                     <color key="textColor" red="0.24778205277350951" green="0.24778205277350951" blue="0.24778205277350951" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It is here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsz-QK-sAc">
+                                                    <rect key="frame" x="238" y="30" width="66" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="66" id="Hu2-gZ-7wK"/>
+                                                        <constraint firstAttribute="height" constant="21" id="tJE-DI-lr0"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="ulh-HI-lnF" firstAttribute="top" secondItem="fru-Ei-gi9" secondAttribute="top" id="3KE-L1-EfH"/>
@@ -136,6 +146,8 @@
                                                 <constraint firstItem="68d-0Q-pPg" firstAttribute="centerY" secondItem="ulh-HI-lnF" secondAttribute="centerY" id="U8P-Ul-fJB"/>
                                                 <constraint firstItem="575-5q-Xt6" firstAttribute="top" secondItem="ulh-HI-lnF" secondAttribute="bottom" constant="8" id="auB-r3-Rxe"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="575-5q-Xt6" secondAttribute="trailing" constant="12" id="cRY-ZY-Kr8"/>
+                                                <constraint firstItem="Rsz-QK-sAc" firstAttribute="top" secondItem="caO-lk-sxq" secondAttribute="topMargin" constant="22" id="dAP-K8-Qce"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Rsz-QK-sAc" secondAttribute="trailing" constant="63" id="dxU-Tn-4pK"/>
                                                 <constraint firstItem="ulh-HI-lnF" firstAttribute="leading" secondItem="fru-Ei-gi9" secondAttribute="trailing" constant="12" id="qJj-cN-Ojp"/>
                                                 <constraint firstItem="fru-Ei-gi9" firstAttribute="top" secondItem="caO-lk-sxq" secondAttribute="topMargin" id="ziq-U1-WtZ"/>
                                             </constraints>

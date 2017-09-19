@@ -65,9 +65,9 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             }
             
             if numberOfTypers > 0 && AuthService.instance.isLoggedIn == true {
-                var verb = "is"
+                let verb = "is"
                 if numberOfTypers > 1 {
-                    var verb = "are"
+                    let verb = "are"
                 }
                 self.typingUsersLbl.text = "\(names) \(verb) typing a message"
             } else {
